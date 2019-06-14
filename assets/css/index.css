@@ -330,10 +330,9 @@
 		}*/
 
 	.carousel-cell {
-		width: 90%;
+		width: calc(100%-10px);
 		counter-increment: gallery-cell;
 		border: 10px solid #553616;
-		margin: 0 auto;
 	}
 	.carousel-cell img {
 		width: 100%;
