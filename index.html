@@ -9,9 +9,10 @@
 		<style>
 			@import "assets/css/index.css";
 		</style>
-		<script src="assets/js/flickity.pkgd.min.js"></script>
+		<!--script src="assets/js/flickity.pkgd.min.js"></script-->
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="icon" type="image/png" href="assets/images/logoicon.png" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 	</head>
 	<body>
 <!--top紐-->
@@ -34,7 +35,7 @@
 					<div class="naleft3"><div>品牌介紹</div><img src="assets/images/header_buttonbg5.png" alt="" class="button_bg3"></div>
 				</a>
 				<a href="follow.html">
-					<div class="naleft3"><div>購物流程</div><img src="assets/images/header_buttonbg4.png" alt="" class="button_bg3"></div>
+					<div class="naleft3"><div>幫助中心</div><img src="assets/images/header_buttonbg4.png" alt="" class="button_bg3"></div>
 				</a>
 				<div class="dropdown">
 					<a href="brand.html">
@@ -125,11 +126,42 @@
 		</nav>
 	<!--header-->
 	<article>
-		<div class="carousel" data-flickity='{ "autoPlay": 2500 }'>
-			<div class="carousel-cell"><div class="cell2"><a href="Category-tool.html"><img src="assets/images/banner1.png"></a></div></div>
-			<div class="carousel-cell"><div class="cell2"><a href="Category-material.html"><img src="assets/images/banner2.png"></a></div></div>
-			<div class="carousel-cell"><div class="cell2"><a href="Category-shelf.html"><img src="assets/images/banner3.png"></a></div></div>
+		<div class="slideshow ">
+			<a href="Category-tool.html"><div class="carousel-cell fade"><div class="cell2"><img src="assets/images/banner1.png"></div></div></a>
+			<div class="carousel-cell  fade"><div class="cell2"><a href="Category-material.html"><img src="assets/images/banner2.png"></a></div></div>
+			<div class="carousel-cell  fade"><div class="cell2"><a href="Category-shelf.html"><img src="assets/images/banner3.png"></a></div></div>
+			<!--a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  			<a class="next" onclick="plusSlides(1)">&#10095;</a-->
 		</div>
+
+		<br>
+
+		<div style="text-align:center">
+		  <span class="dot" onclick="currentSlide(1)"></span> 
+		  <span class="dot" onclick="currentSlide(2)"></span> 
+		  <span class="dot" onclick="currentSlide(3)"></span> 
+		</div>
+		<script>
+			var slideIndex = 0;
+			showSlides();
+
+			function showSlides() {
+			  var i;
+			  var slides = document.getElementsByClassName("carousel-cell");
+			  var dots = document.getElementsByClassName("dot");
+			  for (i = 0; i < slides.length; i++) {
+			    slides[i].style.display = "none";  
+			  }
+			  slideIndex++;
+			  if (slideIndex > slides.length) {slideIndex = 1}    
+			  for (i = 0; i < dots.length; i++) {
+			    dots[i].className = dots[i].className.replace(" active", "");
+			  }
+			  slides[slideIndex-1].style.display = "block";  
+			  dots[slideIndex-1].className += " active";
+			  setTimeout(showSlides, 3000); // Change image every 2 seconds
+			}
+		</script>
 		<!--幻燈片-->
 		<!--產品分類-->
 		<div class="fixed">
