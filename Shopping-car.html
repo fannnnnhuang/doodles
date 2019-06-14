@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Shopping-car</title>
+		<style>
+			@import "assets/css/shopping-car.css"
+		</style>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="icon" type="image/png" href="assets/images/logoicon.png" />
+	</head>
+	<body>
+		<!--top紐-->
+		<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+		<script src="assets/js/goto-top.js"></script>
+		<!--top紐-->
+		<!--haeder-->
+		<nav>
+			<div class="navbar">
+				<div class="nalogo">
+					<a href="index.html"><img src="assets/images/smalllogo.png" alt=""></a>
+				</div>
+				<a href="index.html">
+					<div class="naleft"><div>首頁</div><img src="assets/images/header_buttonbg.png" alt="" class="button_bg"></div>
+				</a>
+				<a href="about.html">
+					<div class="naleft2"><div>關於我們</div><img src="assets/images/header_buttonbg2.png" alt="" class="button_bg2"></div>
+				</a>
+				<a href="brand.html">
+					<div class="naleft3"><div>品牌介紹</div><img src="assets/images/header_buttonbg5.png" alt="" class="button_bg3"></div>
+				</a>
+				<a href="follow.html">
+					<div class="naleft3"><div>購物流程</div><img src="assets/images/header_buttonbg4.png" alt="" class="button_bg3"></div>
+				</a>
+				<div class="dropdown">
+					<a href="brand.html">
+						<div class="dropbut">
+							<div class="dropstyle">商品分類&dArr;<div class="dropimg"></div>
+						</div>
+					</div>
+				</a>
+				<div class="dropinnertext">
+					<div class="body">
+						<div class="hotheader" >
+							<div class="hotbutton">
+								<a href="brand.html#全部商品"><button  class="hotheader" type="button" name="" value= "">
+									<span>全館熱門商品</span>
+								</button></a>
+							</div>
+							<div class="hotbutton">
+								<a href="brand.html#熱門商品"><button  class="hotheader" type="button" name="" value= "">
+									<span>所有商品</span>
+								</button></a>
+							</div>
+						</div>
+						
+						<div class="dropdown-cell">
+							<div class="dropdown-title">&hearts;畫具</div>
+							<a href="Category-tool.html">
+								<div class="dropdown-a">全部</div>
+							</a>
+							<a href="Category-tool.html#畫筆">
+								<div class="dropdown-a">畫筆</div>
+							</a>
+							<a href="Category-tool.html#畫刀">
+								<div class="dropdown-a">畫刀</div>
+							</a>
+							<a href="Category-tool.html#其他">
+								<div class="dropdown-a">其他</div>
+							</a>
+						</div>
+						
+						<div class="dropdown-cell">
+							<div class="dropdown-title">&hearts;畫材</div>
+							<a href="Category-material.html">
+								<div class="dropdown-a">全部</div>
+							</a>
+							<a href="Category-material.html#顏料">
+								<div class="dropdown-a">顏料</div>
+							</a>
+							<a href="Category-material.html#畫紙">
+								<div class="dropdown-a">畫紙</div>
+							</a>
+						</div>
+						
+						<div class="dropdown-cell">
+							<div class="dropdown-title">&hearts;畫架</div>
+							<a href="Category-shelf.html">
+								<div class="dropdown-a">全部</div>
+							</a>
+							<a href="Category-shelf.html#畫架-畫架">
+								<div class="dropdown-a">畫架</div>
+							</a>
+							<a href="Category-shelf.html#畫板">
+								<div class="dropdown-a">畫板</div>
+							</a>
+							<a href="Category-shelf.html#畫框">
+								<div class="dropdown-a">畫框</div>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--分隔，這邊是登入前的按鈕-->
+		<div class="navbar-right">
+			<a href="login.html" title="登入／註冊"><img src="assets/images/login.png" alt=""></a>
+		</div>
+		<!--分隔，登入後將改用這個部分的按鈕XD「style="display: none;"」用來隱藏按鈕用。-->
+		<div class="navbar-right" style="display: none;">
+			<a href="index.html" title="登出"><img src="assets/images/logout.png" alt=""></a>
+		</div>
+		<!--分隔，登入後將改用這個部分的按鈕XD「style="display: none;"」用來隱藏按鈕用。-->
+		<div class="navbar-right" style="display: none;">
+			<a href="member.html" title="會員中心"><img src="assets/images/loginsuc.png" alt=""></a>
+		</div>
+		<!--分隔-->
+		<div class="navbar-right2">
+			<a href="Shopping-car.html" title="購物車" style="position: relative;"><img src="assets/images/car.png" alt=""><span class="navbar-right2-num">0
+				<!--span 為購物車的數字-->
+			</span></a>
+		</div>
+		<!--分隔-->
+	</nav>
+	<!--header-->
+	<article>
+		<!--購物車清單開始-->
+		<div class="Shopping-car">
+			<div class="title Shopping-car-title">
+				🛒購物車清單
+			</div>
+			
+			<div class="car-show">
+				<form action="22.html" method="get" accept-charset="utf-8">
+					<ul>
+						
+						
+				<form action="3.html" method="get" accept-charset="utf-8">
+							
+							<li>
+								<div style="display: flex;">
+									<div style="margin: auto;">
+										<a href="">
+											<img src="assets/images/easel.png" alt="產品照片">
+										</a>
+									</div>
+									<div class="car-inner-box">
+										<div class="car-inner-box-name">
+											<a href="">
+												畫架
+											</a>
+										</div>
+										<form action="2.html" method="get" accept-charset="utf-8">
+											
+											<div class="car-inner-box-price" >數量: <input class="nn" type="number" name="quantity" value="1" min="1" max="12"/><button type="submit" class="cbtn" name="product_no" value="" onclick="change()" >修改</button>
+										</div>
+										
+									</form>
+									
+									<div class="car-inner-box-price">單價：100元</div>
+									<div class="car-inner-box-price">總價：10元</div>
+								</div>
+							</div>
+							
+							<button type="submit" class="remove" name="product_no" value="" onclick="removeAlert()" >✂️</button>
+							
+						</li>
+					</form>
+
+					<form action="3.html" method="get" accept-charset="utf-8">
+							
+							<li>
+								<div style="display: flex;">
+									<div style="margin: auto;">
+										<a href="">
+											<img src="assets/images/easel.png" alt="產品照片">
+										</a>
+									</div>
+									<div class="car-inner-box">
+										<div class="car-inner-box-name">
+											<a href="">
+												畫架
+											</a>
+										</div>
+										<form action="2.html" method="get" accept-charset="utf-8">
+											
+											<div class="car-inner-box-price" >數量: <input class="nn" type="number" name="quantity" value="1" min="1" max="12"/><button type="submit" class="cbtn" name="product_no" value="" onclick="change()" >修改</button>
+										</div>
+										
+									</form>
+									
+									<div class="car-inner-box-price">單價：100元</div>
+									<div class="car-inner-box-price">總價：10元</div>
+								</div>
+							</div>
+							
+							<button type="submit" class="remove" name="product_no" value="" onclick="removeAlert()" >✂️</button>
+							
+						</li>
+					</form>
+					
+					
+					
+				</ul>
+			</form>
+			<div class="car-check">
+				<span>Total:$100</span>
+				<!--如果結帳金額不是0顯示結帳按鈕-->
+				<form action="33" method="get" accept-charset="utf-8">
+					
+					<button  type="sumbit"  name="total" value="1" >結&nbsp;帳</button>
+				</form>
+				
+				
+				<!--如果結帳金額是0顯示開始購物按鈕
+				<div style="margin: 10px;padding-bottom: 10px;"><a href="index.html" title="開始購物" class="without_login footer_link">開始購物</a></div>
+				
+				如果沒登入顯示的按鈕
+				<div style="margin: 10px;padding-bottom: 40px;"><a href="login.html/*檔名卻認*/" title="會員登入" class="without_login footer_link">按此登入</a></div>-->
+			</div>
+		</div>
+		
+	</div>
+	
+	<!--購物車清單結束-->
+	<div class="other-box">
+		<!--其他商品開始-->
+		<div class="other-pro-box">
+			<div  class="other-big-text">
+				<img class="other-logo" src="img/like-heart-icon.svg" alt="">
+				<div class="other-inner-text">👍其他商品</div>
+			</div>
+			<div class="container-fluid ">
+				<div class="card1">
+					<a class="link-set" href="Product-page.html" title="產品詳細資訊">
+						<img class="pro-img" src="assets/images/easel.png" alt="畫架">
+						<div class="pro-box">
+							<p class="pro-title">畫架</p>
+							<p class="card-text ">NT$&nbsp;500</p>
+							
+							<form name="addpro" action="" method="">
+								<div class="addpro-box">
+									<a href="Product-page.html"><button class="addpro-btn" type="button" name="" value= "" >
+										<span>商品資訊</span>
+									</button></a>
+									<button class="addpro-btn" type="sumbit" name="" value= "" onclick="addAlert()">
+									<span>加入購物車</span>
+									</button>
+									
+								</div>
+							</form>
+						</div>
+					</a>
+				</div>
+				<div class="card1">
+					<a class="link-set" href="Product-page.html" title="產品詳細資訊">
+						<img class="pro-img" src="assets/images/easel.png" alt="畫架">
+						<div class="pro-box">
+							<p class="pro-title">畫架</p>
+							<p class="card-text ">NT$&nbsp;500</p>
+							<form name="addpro" action="" method="">
+								<div class="addpro-box">
+									<a href="Product-page.html"><button class="addpro-btn" type="button" name="" value= "">
+										<span>商品資訊</span>
+									</button></a>
+									<button class="addpro-btn" type="sumbit" name="" value= "" onclick="addAlert()">
+									<span>加入購物車</span>
+									</button>
+									
+								</div>
+							</form>
+						</div>
+					</a>
+				</div>
+				<div class="card1">
+					<a class="link-set" href="Product-page.html" title="產品詳細資訊">
+						<img class="pro-img" src="assets/images/easel.png" alt="畫架">
+						<div class="pro-box">
+							<p class="pro-title">畫架</p>
+							<p class="card-text ">NT$&nbsp;500</p>
+							
+							<form name="addpro" action="" method="">
+								<div class="addpro-box">
+									<a href="Product-page.html"><button class="addpro-btn" type="button" name="" value= "">
+										<span>商品資訊</span>
+									</button></a>
+									<button class="addpro-btn" type="sumbit" name="" value= "" onclick="addAlert()">
+									<span>加入購物車</span>
+									</button>
+									
+								</div>
+							</form>
+						</div>
+					</a>
+				</div>
+				<div class="card1">
+					<a class="link-set" href="Product-page.html" title="產品詳細資訊">
+						<img class="pro-img" src="assets/images/easel.png" alt="畫架">
+						<div class="pro-box">
+							<p class="pro-title">畫架</p>
+							<p class="card-text ">NT$&nbsp;500</p>
+							
+							<form name="addpro" action="" method="">
+								<div class="addpro-box">
+									<a href="Product-page.html"><button class="addpro-btn" type="button" name="" value= "">
+										<span>商品資訊</span>
+									</button></a>
+									<button class="addpro-btn" type="sumbit" name="" value= "" onclick="addAlert()">
+									<span>加入購物車</span>
+									</button>
+									
+								</div>
+							</form>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+		<!-- 其他商品END -->
+	</div>
+</article>
+<script>//判斷是否填寫購物數量，按鈕變小
+			function addAlert(){
+				alert("成功加入購物車,感謝你的支持");
+				}
+				function removeAlert(){
+				alert("已移除商品");
+				}
+				function change(){
+				alert("成功修改數量");
+				}
+</script>
+<!--footer-->
+<footer>
+	<div class="footer">
+		<div class="footer_left">
+			<div class="footer_title">[ 會員中心🚀 ]</div><br>
+			<div class="footer_text"><a href="member.html" class="footer_link">會員資料</a><br><a href="about.html" class="footer_link">加入我們</a><br><a href="follow.html" class="footer_link">幫助中心</a><br><br>訪客人數:0</div>
+		</div>
+		<div class="footer_left">
+			<div class="footer_title">[ 客服中心📞 ]</div><br>
+			<div class="footer_text"></div>
+			<div><span class="contact_title">聯絡我們</span>
+			<form action="mailto:s10640135@cycu.edu.tw">
+				<table border="1" align="center" class="contact">
+					<tr><td>NAME</td><td>
+					<input type="text" name="username" placeholder="Name" size="10" maxlength="10" class="footer_input" /></td></tr>
+					<tr><td>GENDER</td><td>
+					<input type="radio" name="gender" value="male" checked />Male   <input type="radio" name="gender" value="female" />Female </td></tr>
+					<tr><td>EMAIL</td><td>
+					<input type="text" name="useremail" placeholder="Email" size="10" maxlength="10"  class="footer_input"/></td></tr>
+					<tr><td>MESSAGE</td><td>
+				<textarea name="Message" cols="20" rows="2" wrap="hard" class="footer_input"> </textarea> </td></tr>
+			</table>
+			<input type="submit" value="送出" class="submit" />    <button type="reset" class="reset">Cancel</button>
+		</form>
+	</div>
+</div>
+<div class="footer_left">
+	<div class="footer_title">[ 最新消息🔔 ]</div><br>
+	<div class="footer_text"><a href="index.html" class="footer_link"><div>6月購物天天折50元</div><div>本月熱門商品</div><div>滿千送百活動開跑啦</div></a></div>
+</div>
+<div class="footer_left">
+	<div class="footer_title">[ 關於我們🌸 ]</div><br>
+	<div class="footer_text"><a href="brand.html" class="footer_link"><img src="assets/images/logo.png" alt="" class="footer_logo"><br>品牌簡介</a></div>
+</div>
+</div>
+<div class="copyright">Copyright © 2019 CYIM. All Rights Reserved</div>
+</footer>
+<!--footer-->
+</body>
+</html>

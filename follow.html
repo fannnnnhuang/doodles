@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>幫助中心</title>
+		<style>
+			@import "assets/css/follow.css"
+
+
+
+		</style>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="icon" type="image/png" href="assets/images/logoicon.png" />
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+		
+	</head>
+	<body>
+		<!--top紐-->
+		<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+		<script src="assets/js/goto-top.js"></script>
+		<!--top紐-->
+		<!--haeder-->
+		<nav>
+			<div id="navbar">
+				<div id="nalogo">
+					<a href="index.html"><img src="assets/images/smalllogo.png" alt=""></a>
+				</div>
+				<a href="index.html">
+					<div id="naleft"><div>首頁</div><img src="assets/images/header_buttonbg.png" alt="" id="button_bg"></div>
+				</a>
+				<a href="about.html">
+					<div id="naleft2"><div>關於我們</div><img src="assets/images/header_buttonbg2.png" alt="" id="button_bg2"></div>
+				</a>
+				<a href="brand.html">
+					<div id="naleft3"><div>品牌介紹</div><img src="assets/images/header_buttonbg5.png" alt="" id="button_bg3"></div>
+				</a>
+				<a href="follow.html">
+					<div id="naleft3"><div>購物流程</div><img src="assets/images/header_buttonbg4.png" alt="" id="button_bg3"></div>
+				</a>
+				<div id="dropdown">
+					<a href="brand.html">
+						<div id="dropbut">
+							<div id="dropstyle">商品分類&dArr;<div id="dropimg"></div>
+						</div>
+					</div>
+				</a>
+				<div id="dropinnertext">
+					<div id="body">
+						<div id="hotheader" >
+							<div id="hotbutton">
+								<a href="brand.html#全部商品"><button  id="hotheader" type="button" name="" value= "">
+									<span>全館熱門商品</span>
+								</button></a>
+							</div>
+							<div id="hotbutton">
+								<a href="brand.html#熱門商品"><button  id="hotheader" type="button" name="" value= "">
+									<span>所有商品</span>
+								</button></a>
+							</div>
+						</div>
+						
+						<div id="dropdown-cell">
+							<div id="dropdown-title">&hearts;畫具</div>
+							<a href="Category-tool.html">
+								<div id="dropdown-a">全部</div>
+							</a>
+							<a href="Category-tool.html#畫筆">
+								<div id="dropdown-a">畫筆</div>
+							</a>
+							<a href="Category-tool.html#畫刀">
+								<div id="dropdown-a">畫刀</div>
+							</a>
+							<a href="Category-tool.html#其他">
+								<div id="dropdown-a">其他</div>
+							</a>
+						</div>
+						
+						<div id="dropdown-cell">
+							<div id="dropdown-title">&hearts;畫材</div>
+							<a href="Category-material.html">
+								<div id="dropdown-a">全部</div>
+							</a>
+							<a href="Category-material.html#顏料">
+								<div id="dropdown-a">顏料</div>
+							</a>
+							<a href="Category-material.html#畫紙">
+								<div id="dropdown-a">畫紙</div>
+							</a>
+						</div>
+						
+						<div id="dropdown-cell">
+							<div id="dropdown-title">&hearts;畫架</div>
+							<a href="Category-shelf.html">
+								<div id="dropdown-a">全部</div>
+							</a>
+							<a href="Category-shelf.html#畫架-畫架">
+								<div id="dropdown-a">畫架</div>
+							</a>
+							<a href="Category-shelf.html#畫板">
+								<div id="dropdown-a">畫板</div>
+							</a>
+							<a href="Category-shelf.html#畫框">
+								<div id="dropdown-a">畫框</div>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--分隔，這邊是登入前的按鈕-->
+		<div id="navbar-right">
+			<a href="login.html" title="登入／註冊"><img src="assets/images/login.png" alt=""></a>
+		</div>
+		<!--分隔，登入後將改用這個部分的按鈕XD「style="display: none;"」用來隱藏按鈕用。-->
+		<div id="navbar-right" style="display: none;">
+			<a href="index.html" title="登出"><img src="assets/images/logout.png" alt=""></a>
+		</div>
+		<!--分隔，登入後將改用這個部分的按鈕XD「style="display: none;"」用來隱藏按鈕用。-->
+		<div id="navbar-right" style="display: none;">
+			<a href="member.html" title="會員中心"><img src="assets/images/loginsuc.png" alt=""></a>
+		</div>
+		<!--分隔-->
+		<div id="navbar-right2">
+			<a href="Shopping-car.html" title="購物車" style="position: relative;"><img src="assets/images/car.png" alt=""><span id="navbar-right2-num">0
+				<!--span 為購物車的數字-->
+			</span></a>
+		</div>
+		<!--分隔-->
+	</nav>
+	<!--header-->
+
+		
+		<article id="help" >
+			<div class="container">
+				<div class="row">
+					
+					<div class="col-md-4 col-sm-4" >
+						<div>
+							<h3>About Product</h3>
+							
+						</div>
+						<div class="img2">
+							<img class="image" src="assets/images/follow1.jpg" alt="help img">
+							<div class="overlay">
+								<a href="brand.html#全部商品" ><p>全館商品</p></a>
+								<a href="brand.html#熱門商品" ><p>熱門商品</p></a>
+								<a href="index.html" ><p>商品列表</p></a>
+								<a href="Category-shelf.html" ><p>分類列表</p></a>
+								<a href="Category-tool.html" ><p>商品搜尋</p></a>
+							</div>
+							
+						</div>
+						<div>
+							<h3>About Us</h3>
+							
+						</div>
+						<div class="img2">
+							<img class="image" src="assets/images/follow2.jpg" alt="help img">
+							<div class="overlay">
+								<a href="brand.html" ><p>品牌介紹</p></a>
+								<a href="about.html" ><p>關於我們</p></a>
+								<a href="about.html" ><p>聯絡我們</p></a>
+								<a href="about.html" ><p>加入我們</p></a>
+							
+								
+							</div>
+							
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-4 " >
+						
+						<div class="img2">
+							
+							<img class="image2" src="assets/images/follow5.jpg" alt="help img">
+					
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-4" >
+						<div>
+							<h3>About You</h3>
+							
+						</div>
+						<div class="img2">
+							<img class="image" src="assets/images/follow3.jpg" alt="help img">
+							<div class="overlay">
+								<a href="login.html" ><p>登入/註冊</p></a>
+								<a href="login.html" ><p>資料查詢</p></a>
+								<a href="login.html" ><p>購物紀錄</p></a>
+								<a href="login.html" ><p>評分紀錄</p></a>
+								<a href="login.html" ><p>修改會員資料</p></a>
+							</div>
+							
+						</div>
+						<div>
+								<h3>About Shopping</h3>
+								
+							</div>
+
+						<div class="img2">
+							
+							<img class="image" src="assets/images/follow4.jpg" alt="help img">
+							<div class="overlay">
+							
+								<a href="index.html" ><p>Step1．選購商品</p></a>
+								<a href="index.html" ><p>Step2．確認身份</p></a>
+								<a href="index.html" ><p>Step3．確認訂單</p></a>
+								<a href="index.html" ><p>Step4．完成結帳</p></a>
+								
+							</div>
+							
+						</div>
+					</div>
+				</div>
+			</div>
+		
+	</article>
+	<footer>
+		<div class="footer">
+			<div class="footer_left">
+				<div class="footer_title">[ 會員中心🚀 ]</div><br>
+				<div class="footer_text"><a href="member.html" class="footer_link">會員資料</a><br><a href="about.html" class="footer_link">加入我們</a><br><a href="follow.html" class="footer_link">幫助中心</a><br><br>訪客人數:0</div>
+			</div>
+			<div class="footer_left">
+				<div class="footer_title">[ 客服中心📞 ]</div><br>
+				<div class="footer_text"></div>
+				<div><span class="contact_title">聯絡我們</span>
+				<form action="mailto:s10640135@cycu.edu.tw">
+					<table border="1" align="center" class="contact">
+						<tr><td>NAME</td><td>
+						<input type="text" name="username" placeholder="Name" size="10" maxlength="10" class="footer_input" /></td></tr>
+						<tr><td>GENDER</td><td>
+						<input type="radio" name="gender" value="male" checked />Male   <input type="radio" name="gender" value="female" />Female </td></tr>
+						<tr><td>EMAIL</td><td>
+						<input type="text" name="useremail" placeholder="Email" size="10" maxlength="10"  class="footer_input"/></td></tr>
+						<tr><td>MESSAGE</td><td>
+					<textarea name="Message" cols="20" rows="2" wrap="hard" class="footer_input"> </textarea> </td></tr>
+				</table>
+				<input type="submit" value="送出" class="submit" />    <button type="reset" class="reset">Cancel</button>
+			</form>
+		</div>
+	</div>
+	<div class="footer_left">
+		<div class="footer_title">[ 最新消息🔔 ]</div><br>
+		<div class="footer_text"><a href="index.html" class="footer_link"><div>6月購物天天折50元</div><div>本月熱門商品</div><div>滿千送百活動開跑啦</div></a></div>
+	</div>
+	<div class="footer_left">
+		<div class="footer_title">[ 關於我們🌸 ]</div><br>
+		<div class="footer_text"><a href="brand.html" class="footer_link"><img src="assets/images/logo.png" alt="" class="footer_logo"><br>品牌簡介</a></div>
+	</div>
+</div>
+<div class="copyright">Copyright © 2019 CYIM. All Rights Reserved</div>
+</footer>
+</body>
+</html>

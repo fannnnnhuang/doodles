@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="icon" type="image/png" href="assets/images/logoicon.png" />
+		<title>後台管理-商品</title>
+		<style>
+		@import "assets/css/manage.css";
+		</style>
+		<script src="assets/js/goto-top.js"></script>
+		<script src="assets/js/manage.js"></script>
+	</head>
+	<body>
+		<!--top紐-->
+		<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+		
+		<!--top紐-->
+		<!--haeder-->
+		
+		<nav>
+			<div class="navbar">
+				
+				<div class="nalogo">
+					<a href="index.html"><img src="assets/images/smalllogo.png" alt=""></a>
+				</div>
+				
+				<a href="index.html">
+					<div class="naleft"><div>首頁</div><img src="assets/images/header_buttonbg.png" alt="" class="button_bg"></div>
+				</a>
+				<a href="manage.html">
+					<div class="naleft2"><div>商品管理</div><img src="assets/images/header_buttonbg2.png" alt="" class="button_bg2"></div>
+				</a>
+				<a href="manage-order.html">
+					<div class="naleft3"><div>訂單管理</div><img src="assets/images/header_buttonbg5.png" alt="" class="button_bg3"></div>
+				</a>
+			
+				
+			</div>
+			<!--登出-->
+			
+			<div class="navbar-right" >
+				<a href="index.html" title="登出"><img src="assets/images/logout.png" alt=""></a>
+			</div>
+		</nav>
+		<!--header-->
+		
+		<article>
+			<!--表格-->
+			
+			<div class="order-box">
+				<div class="order-box-title">商品列表</div>
+				<div class="order-box2 ">
+					
+					<div class="order-inner-box">
+						<a herf =""><div class="order-inner-box2">商品名稱</div></a>
+						<div class="order-inner-box2">商品編號</div>
+						<div class="order-inner-box2">上架時間</div>
+						<div class="order-inner-box2">商品價格</div>
+						<div class="order-inner-box2">總共庫存</div>
+						
+					</div>
+					
+					<div class="order-inner-box">
+						<a herf =""><div class="order-inner-box3">畫板55515515</div></a>
+						<div class="order-inner-box3">30</div>
+						<div class="order-inner-box3">2</div>
+						<div class="order-inner-box3">60</div>
+						<div class="order-inner-box3">60</div>
+					</div>
+					
+					<div class="order-inner-box">
+						<a herf =""><div class="order-inner-box3">畫板</div></a>
+						<div class="order-inner-box3">40</div>
+						<div class="order-inner-box3">2</div>
+						<div class="order-inner-box3">80</div>
+						<div class="order-inner-box3">60</div>
+						
+					</div>
+					<div class="order-inner-box">
+						<a herf =""><div class="order-inner-box3">畫板2</div></a>
+						<div class="order-inner-box3">40</div>
+						<div class="order-inner-box3">2</div>
+						<div class="order-inner-box3">80</div>
+						<div class="order-inner-box3">60</div>
+					</div>
+					<div class="order-inner-box">
+						<a herf =""><div class="order-inner-box3">畫板</div></a>
+						<div class="order-inner-box3">40</div>
+						<div class="order-inner-box3">2</div>
+						<div class="order-inner-box3">80</div>
+						<div class="order-inner-box3">60</div>
+					</div>
+					<div class="order-inner-box">
+						<a herf =""><div class="order-inner-box3">畫板</div></a>
+						<div class="order-inner-box3">40</div>
+						<div class="order-inner-box3">2</div>
+						<div class="order-inner-box3">80</div>
+						<div class="order-inner-box3">60</div>
+					</div>
+					
+				</div>
+			</div>
+			<!--表格-->
+			<!--修改...-->
+			<div class="do" align="center" >
+				<button class="sort21" onclick="myFunction()">刪除商品</button>
+				<button class="sort22" onclick="myFunction2()">新增商品</button>
+				<button class="sort23" onclick="myFunction3()">修改商品</button>
+				<div id="myDIV">
+					<form type="sumbit" action="" method="get">
+						<table border="0" align="center">
+							<tr>
+								<td>*商品編號：</td><td><input class="submit" type="text" name="product_no" value="" placeholder="請輸入商品編號"   required /></td>
+								<td><input class="sort" type="submit" value="刪除商品"/></td>
+								<td><input class="sort" type="reset" value="重寫" /> </td>
+								
+							</tr>
+							
+						</table>
+					</form>
+					
+				</div>
+				
+				<div id="myDIV2">
+					<form type="sumbit" action="">
+						<table border="0" align="center">
+							<tr>
+								<td>*商品編號：</td><td><input  required class="submit" type="text" name="product_no" value="" placeholder="請輸入大於的數"  /></td>
+								<td>*商品名稱：</td><td><input  required class="submit" type="text" name="name" value="" placeholder="填寫完整資訊" /></td>
+								<td>*商品價格：</td><td><input  required class="submit" type="text" name="price" value="" placeholder="填寫完整資訊" /></td>
+							</tr>
+							<tr>
+								<td>*商品庫存：</td><td><input  required class="submit" type="text" name="stock" value="" placeholder="填寫完整資訊" /></td>
+								<td>*商品照片：</td><td><input  required class="submit" type="text" name="img" value="" placeholder="XXX.jpg"/></td>
+								<td>*商品介紹：</td><td><input  required class="submit" type="text" name="content" value="" placeholder="填寫完整資訊" /></td>
+							</tr>
+						</table>
+						<table border="0" align="center">
+							<tr>
+								<td>*上架日期：</td><td><input  required class="submit" type="date" name="date" value="" placeholder="填寫完整資訊" /></td>
+								<td>*商品主分類：</td>
+								<td>
+									<select class="submit"  name="bigtype" value="" onChange="renew(this.selectedIndex);" required>
+										<option disabled=disabled selected=selected></option>
+										<option>畫具</option>
+										<option>畫材</option>
+										<option>畫架</option>
+									</select>
+								</td>
+								<td>*商品子分類：</td>
+								<td>
+									<select id="member" class="submit"  name="smalltype" value="" required>
+										<option></option>
+									</select>
+								</td>
+								
+								<td><input class="sort" type="submit" value="新增商品" /> </td>
+								<td><input class="sort" type="reset" value="重寫" /> </td>
+							</tr>
+						</table>
+					</form>
+				</div>
+				<div id="myDIV3">
+					<form type="sumbit" action="">
+						<table border="0" align="center">
+							<tr>
+								<td>*商品編號：</td><td><input  required class="submit" type="text" name="product_no" value="" placeholder="請輸入大於的數"  /></td>
+								<td>*商品名稱：</td><td><input  required class="submit" type="text" name="name" value="" placeholder="填寫完整資訊" /></td>
+								<td>*商品價格：</td><td><input  required class="submit" type="text" name="price" value="" placeholder="填寫完整資訊" /></td>
+							</tr>
+							<tr>
+								<td>*商品庫存：</td><td><input  required class="submit" type="text" name="stock" value="" placeholder="填寫完整資訊" /></td>
+								<td>*商品照片：</td><td><input  required class="submit" type="text" name="img" value="" placeholder="XXX.jpg"/></td>
+								<td>*商品介紹：</td><td><input  required class="submit" type="text" name="content" value="" placeholder="填寫完整資訊" /></td>
+							</tr>
+						</table>
+						<table border="0" align="center">
+							<tr>
+								<td>*上架日期：</td><td><input  required class="submit" type="date" name="date" value="" placeholder="填寫完整資訊" /></td>
+								<td>*商品主分類：</td>
+								<td>
+									<select class="submit"  name="bigtype" value="" onChange="renew2(this.selectedIndex);" required>
+										<option disabled=disabled selected=selected></option>
+										<option>畫具</option>
+										<option>畫材</option>
+										<option>畫架</option>
+									</select>
+								</td>
+								<td>*商品子分類：</td>
+								<td>
+									<select id="member2" class="submit"  name="smalltype" value="" required>
+										<option></option>
+									</select>
+								</td>
+								
+								<td><input class="sort" type="submit" value="修改商品" /> </td>
+								<td><input class="sort" type="reset" value="重寫" /> </td>
+							</tr>
+						</table>
+					</form>
+				</div>
+			</div>
+			<!--修改...-->
+			
+		</article>
+	</body>
+</html>

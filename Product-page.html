@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="icon" type="image/png" href="assets/images/logoicon.png" />
+		<title>商品頁面</title>
+		<style>
+		@import "assets/css/Product-page.css";
+					
+		</style>
+		<script src="assets/js/goto-top.js"></script>
+	</head>
+	<body>
+		<!--top紐-->
+		<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+		
+		<!--top紐-->
+		<!--haeder-->
+		
+		<nav>
+			<div class="navbar">
+				<!--分隔-->
+				<div class="nalogo">
+					<a href="index.html"><img src="assets/images/smalllogo.png" alt=""></a>
+				</div>
+				<!--分隔-->
+				<a href="index.html">
+					<div class="naleft"><div>首頁</div><img src="assets/images/header_buttonbg.png" alt="" class="button_bg"></div>
+					</a><!--分隔-->
+					<a href="about.html">
+						<div class="naleft2"><div>關於我們</div><img src="assets/images/header_buttonbg2.png" alt="" class="button_bg2"></div>
+					</a>
+					<a href="brand.html">
+						<div class="naleft3"><div>品牌介紹</div><img src="assets/images/header_buttonbg5.png" alt="" class="button_bg3"></div>
+					</a>
+					<!--分隔-->
+					<a href="follow.html">
+						<div class="naleft3"><div>購物流程</div><img src="assets/images/header_buttonbg4.png" alt="" class="button_bg3"></div>
+					</a>
+					<!--分隔-->
+					<div class="dropdown">
+						<a href="brand.html">
+							<div class="dropbut">
+								<div class="dropstyle">商品分類&dArr;<div class="dropimg"></div>
+							</div>
+						</div>
+					</a>
+					<div class="dropinnertext">
+						
+						<div class="body">
+							<div class="hotheader" >
+								<div class="hotbutton">
+									<a href="brand.html#熱門商品"><button  class="hotheader" type="button" name="" value= "">
+										<span>全館熱門商品</span>
+									</button></a>
+								</div>
+								<div class="hotbutton">
+									<a href="brand.html#全部商品"><button  class="hotheader" type="button" name="" value= "">
+										<span>所有商品</span>
+									</button></a>
+								</div>
+							</div>
+							
+							<div class="dropdown-cell">
+								<div class="dropdown-title">&hearts;畫具</div>
+								<a href="Category-tool.html">
+									<div class="dropdown-a">全部</div>
+								</a>
+								<a href="Category-tool.html#畫筆">
+									<div class="dropdown-a">畫筆</div>
+								</a>
+								<a href="Category-tool.html#畫刀">
+									<div class="dropdown-a">畫刀</div>
+								</a>
+								<a href="Category-tool.html#其他">
+									<div class="dropdown-a">其他</div>
+								</a>
+							</div>
+							<!--小分隔-->
+							<div class="dropdown-cell">
+								<div class="dropdown-title">&hearts;畫材</div>
+								<a href="Category-material.html">
+									<div class="dropdown-a">全部</div>
+								</a>
+								<a href="Category-material.html#顏料">
+									<div class="dropdown-a">顏料</div>
+								</a>
+								<a href="Category-material.html#畫紙">
+									<div class="dropdown-a">畫紙</div>
+								</a>
+							</div>
+							<!--小分隔-->
+							<div class="dropdown-cell">
+								<div class="dropdown-title">&hearts;畫架</div>
+								<a href="Category-shelf.html">
+									<div class="dropdown-a">全部</div>
+								</a>
+								<a href="Category-shelf.html#畫架-畫架">
+									<div class="dropdown-a">畫架</div>
+								</a>
+								<a href="Category-shelf.html#畫板">
+									<div class="dropdown-a">畫板</div>
+								</a>
+								<a href="Category-shelf.html#畫框">
+									<div class="dropdown-a">畫框</div>
+								</a>
+							</div>
+							
+							<!--小分隔-->
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--分隔，這邊是登入前的按鈕-->
+			<div class="navbar-right">
+				<a href="login.html" title="登入／註冊"><img src="assets/images/login.png" alt=""></a>
+			</div>
+			<!--分隔，登入後將改用這個部分的按鈕XD「style="display: none;"」用來隱藏按鈕用。-->
+			<div class="navbar-right" style="display: none;">
+				<a href="#" title="登出"><img src="assets/images/logout.png" alt=""></a>
+			</div>
+			<!--分隔，登入後將改用這個部分的按鈕XD「style="display: none;"」用來隱藏按鈕用。-->
+			<div class="navbar-right" style="display: none;">
+				<a href="member.html" title="會員中心"><img src="assets/images/loginsuc.png" alt=""></a>
+			</div>
+			<!--分隔-->
+			<div class="navbar-right2">
+				<a href="Shopping-car.html" title="購物車" style="position: relative;"><img src="assets/images/car.png" alt=""><span class="navbar-right2-num">0
+					<!--span 為購物車的數字-->
+				</span></a>
+			</div>
+			<!--分隔-->
+			
+		</nav>
+		<!--header-->
+		<article>
+			<div class="article1">
+				<!--畫面上方1-->
+				<div class="big-top">
+					<!--左側1-->
+					<div class="top-left">
+						
+						<div class="left-img">
+							<!--pro_pic連JS-->
+							<img id="pro_pic" src="assets/images/product/pen4.png" alt="商品照片">
+							
+						</div>
+						
+					</div>
+					<!--左側END-->
+					<!--右邊-->
+					<div class="top-right">
+						
+						<!--分類-->
+						<div class="category">
+							<ul class="cate-inner-text">
+								<li>分類</li>
+								<li><a href="Category-shelf.html">畫架</a></li><!--連到分類頁面的書籤-->
+								<li><a href="Category-shelf.html#畫板">畫板</a></li>
+								<li><a href="Category-shelf.html#畫板NAME">畫板NAME</a></li>
+							</ul>
+						</div>
+						<!--分類END-->
+						<!--商品資訊1-->
+						<div class="top-right-down">
+							
+							<p class="pname">商品名稱</p>
+							
+							<div class="p-price">NT$ 30&nbsp;&nbsp;<del class="p-price2">NT$&nbsp;600</del></div><!--這個刪除線的錢比原本的價錢少就可以-->
+							
+							
+							<p class="p-store">商品庫存量：30</p>
+							
+							
+							<div class="p-intr">
+								
+								商品介紹。商品介紹。商品介紹。商品介紹。商品介紹。商品介紹。商品介紹。商品介紹。
+								商品介紹。商品介紹。商品介紹。商品介紹。商品介紹。商品介紹。商品介紹。
+								
+							</div>
+							<form name="add_car_form" class="buy-box" action="" method="" accept-charset="utf-8">
+								
+								<span>購買數量:<input type="number" name="setnumber" value="0" min="1" max="12" placeholder="1"></span><!--MAX填庫存數量(後端)-->
+								<span>
+									<button class="buy-btn" onClick="check()">加入購物車</button>
+								</span>
+								
+							</form>
+						</div>
+						<!--商品資訊2-->
+						<!--判斷填寫數量1-->
+						<script>
+						function check(){
+							if(add_car_form.setnumber.value == ""||add_car_form.setnumber.value<=0){
+								add_car_form.setnumber.value=0;
+							}
+							else add_car_form.submit();
+						}
+						</script>
+						<!--判斷填寫數量END-->
+					</div>
+					<!--右邊END-->
+				</div>
+				<!--畫面上方END-->
+				<!--留言-->
+				<div class="message">
+					
+					<div class="m-title">
+						&#x2611;商品留言版
+					</div>
+					<div class="m-box">
+						
+						<div class="m-inner-box">
+							<form action="" method="post" accept-charset="utf-8">
+								
+								<img class="user-photo" src="assets/images/m-user.png" alt="">
+								<div class="m-inner-box2">
+									
+									<span>使用者名稱&nbsp;&nbsp;&nbsp;2019-6-12</span>
+									<div class="rating">
+										<!--星-->
+										<input type="radio" id="star5" name="rating" value="5" hidden />
+										<label for="star5">★</label>
+										<input type="radio" id="star4" name="rating" value="4" hidden />
+										<label for="star4">★</label>
+										<input type="radio" id="star3" name="rating" value="3" hidden />
+										<label for="star3">★</label>
+										<input type="radio" id="star2" name="rating" value="2" hidden />
+										<label for="star2">★</label>
+										<input type="radio" id="star1" name="rating" value="1" hidden />
+										<label for="star1">★</label>
+									</div>
+									<textarea name="user_review" cols="20" rows="6" wrap="hard"></textarea>
+									<div class="message-btn" align="center">
+										
+										<input class="form_button-send" type="submit" value="送出" />
+										<input class="form_button-reset" type="reset" value="重填" />
+									</div>
+									<!--	未登入(不能留言)用這個按鈕style="display: none;"」來隱藏按鈕用-->
+									<div class="message-btn" align="center" style="display: none;">
+										
+										<button class="form_button-send" type="button">登入</button>
+									</div>
+									<!--	未登入(不能留言)用這個按鈕style="display: none;"」來隱藏按鈕用-->
+									
+								</div>
+								
+								
+							</form>
+							
+						</div>
+						<!--SHOW出之前的留言-->
+						<div class="m-inner-box">
+							<form action="" method="post" accept-charset="utf-8">
+								
+								<img class="user-photo" src="assets/images/m-user.png" alt="">
+								<div class="m-inner-box2">
+									
+									<span>使用者名稱&nbsp;&nbsp;&nbsp;2019-6-12</span>
+									
+									<div class="rating">
+										<!--星星1-->
+										<div class="already-mes-star ">
+											
+											<!--看使用者之前輸入的star是顯示幾顆星-->
+											<script>
+												var num=0;
+												function Starat(num){//方法:num是幾，就會有幾顆星變色
+													for(var i=0;i<num;i++){
+														document.write("<span class='checked'>★</span>");
+													}
+													for(var i=0;i<(5-num);i++){
+														document.write("<span>★</span>");
+													}
+												}
+												num=4;//這是給四顆星的意思，只要改這裡就可以換
+												Starat(num);
+											</script>
+										</div>
+										<!--星星2-->
+									</div>
+									
+									<div class="textarea2" >
+										
+										評論評論評論評論評論評論評論
+										評論評論評論評論評論評論評論
+										評論評論評論評論評論評論評論
+										評論評論評論評論評論評論評論
+									</div>
+								</div>
+								
+								
+							</form>
+							
+						</div>
+						<!--頁數1(假如不能用的話再和我說)-->
+						<div class="pagination" style="float: right;">
+							<a href="#">&laquo;</a>
+							<a class="active" href="#">1</a>
+							<a href="#">2</a>
+							<a href="#">3</a>
+							<a href="#">4</a>
+							<a href="#">5</a>
+							<a href="#">6</a>
+							<a href="#">&raquo;</a>
+						</div>
+						<!--頁數2-->
+						
+					</div>
+				</div>
+				<!--留言END-->
+				
+				<!--其他商品-->
+					<div class="other-box">
+		<!--其他商品開始-->
+		<div class="other-pro-box">
+			<div  class="other-big-text">
+				<img class="other-logo" src="img/like-heart-icon.svg" alt="">
+				<div class="other-inner-text">👍其他商品</div>
+			</div>
+			<div class="container-fluid ">
+				<div class="card1">
+					<a class="link-set" href="Product-page.html" title="產品詳細資訊">
+						<img class="pro-img" src="assets/images/easel.png" alt="畫架">
+						<div class="pro-box">
+							<p class="pro-title">畫架</p>
+							<p class="card-text ">NT$&nbsp;500</p>
+							
+							<form name="addpro" action="" method="">
+								<div class="addpro-box">
+									<a href="Product-page.html"><button class="addpro-btn" type="button" name="" value= "" >
+										<span>商品資訊</span>
+									</button></a>
+									<button class="addpro-btn" type="sumbit" name="" value= "" onclick="addAlert()">
+									<span>加入購物車</span>
+									</button>
+									
+								</div>
+							</form>
+						</div>
+					</a>
+				</div>
+				<div class="card1">
+					<a class="link-set" href="Product-page.html" title="產品詳細資訊">
+						<img class="pro-img" src="assets/images/easel.png" alt="畫架">
+						<div class="pro-box">
+							<p class="pro-title">畫架</p>
+							<p class="card-text ">NT$&nbsp;500</p>
+							<form name="addpro" action="" method="">
+								<div class="addpro-box">
+									<a href="Product-page.html"><button class="addpro-btn" type="button" name="" value= "">
+										<span>商品資訊</span>
+									</button></a>
+									<button class="addpro-btn" type="sumbit" name="" value= "" onclick="addAlert()">
+									<span>加入購物車</span>
+									</button>
+									
+								</div>
+							</form>
+						</div>
+					</a>
+				</div>
+				<div class="card1">
+					<a class="link-set" href="Product-page.html" title="產品詳細資訊">
+						<img class="pro-img" src="assets/images/easel.png" alt="畫架">
+						<div class="pro-box">
+							<p class="pro-title">畫架</p>
+							<p class="card-text ">NT$&nbsp;500</p>
+							
+							<form name="addpro" action="" method="">
+								<div class="addpro-box">
+									<a href="Product-page.html"><button class="addpro-btn" type="button" name="" value= "">
+										<span>商品資訊</span>
+									</button></a>
+									<button class="addpro-btn" type="sumbit" name="" value= "" onclick="addAlert()">
+									<span>加入購物車</span>
+									</button>
+									
+								</div>
+							</form>
+						</div>
+					</a>
+				</div>
+				<div class="card1">
+					<a class="link-set" href="Product-page.html" title="產品詳細資訊">
+						<img class="pro-img" src="assets/images/easel.png" alt="畫架">
+						<div class="pro-box">
+							<p class="pro-title">畫架</p>
+							<p class="card-text ">NT$&nbsp;500</p>
+							
+							<form name="addpro" action="" method="">
+								<div class="addpro-box">
+									<a href="Product-page.html"><button class="addpro-btn" type="button" name="" value= "">
+										<span>商品資訊</span>
+									</button></a>
+									<button class="addpro-btn" type="sumbit" name="" value= "" onclick="addAlert()">
+									<span>加入購物車</span>
+									</button>
+									
+								</div>
+							</form>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+		<!-- 其他商品END -->
+	</div>
+			</div>
+			
+			<!-- 其他商品END -->
+		</article>
+		
+		<!--放大鏡-->
+		<script src="assets/js/product-bigger.js"></script>
+		<script>
+			function TheAlert(){
+					alert("成功加入購物車,感謝你的支持");
+						
+					}
+		</script>
+		<!--放大鏡-->
+		
+		
+		<!--footer-->
+		<footer>
+			<div class="footer">
+				<div class="footer_left">
+					<div class="footer_title">[ 會員中心🚀 ]</div><br>
+					<div class="footer_text"><a href="member.html" class="footer_link">會員資料</a><br><a href="about.html" class="footer_link">加入我們</a><br><a href="follow.html" class="footer_link">幫助中心</a><br><br>訪客人數:0</div>
+				</div>
+				<div class="footer_left">
+					<div class="footer_title">[ 客服中心📞 ]</div><br>
+					<div class="footer_text"></div>
+					<div><span class="contact_title">聯絡我們</span>
+					<form action="mailto:s10640135@cycu.edu.tw">
+						<table border="1" align="center" class="contact">
+							<tr><td>NAME</td><td>
+							<input type="text" name="username" placeholder="Name" size="10" maxlength="10" class="footer_input" /></td></tr>
+							<tr><td>GENDER</td><td>
+							<input type="radio" name="gender" value="male" checked />Male   <input type="radio" name="gender" value="female" />Female </td></tr>
+							<tr><td>EMAIL</td><td>
+							<input type="text" name="useremail" placeholder="Email" size="10" maxlength="10"  class="footer_input"/></td></tr>
+							<tr><td>MESSAGE</td><td>
+						<textarea name="Message" cols="20" rows="2" wrap="hard" class="footer_input"> </textarea> </td></tr>
+					</table>
+					<input type="submit" value="送出" class="submit" />    <button type="reset" class="reset">Cancel</button>
+				</form>
+			</div>
+		</div>
+		<div class="footer_left">
+			<div class="footer_title">[ 最新消息🔔 ]</div><br>
+			<div class="footer_text"><a href="" class="footer_link"><div>6月購物天天折50元</div><div>本月熱門商品</div><div>滿千送百活動開跑啦</div></a></div>
+		</div>
+		<div class="footer_left">
+			<div class="footer_title">[ 關於我們🌸 ]</div><br>
+			<div class="footer_text"><a href="brand.html" class="footer_link"><img src="assets/images/logo.png" alt="" class="footer_logo"><br>品牌簡介</a></div>
+		</div>
+	</div>
+	<div class="copyright">Copyright © 2019 CYIM. All Rights Reserved</div>
+</footer>
+<!--footer-->
+</body>
+</html>

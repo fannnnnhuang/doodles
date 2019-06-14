@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Login</title>
+		<style>
+		/*每頁的預設*/
+		@import "assets/css/login.css"
+		</style>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="icon" type="image/png" href="assets/images/logoicon.png" />
+	</head>
+	<body>
+<!--top紐-->
+	<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+	<script src="assets/js/goto-top.js"></script>
+<!--top紐-->
+<!--haeder-->
+		<nav>
+			<div class="navbar">
+				<div class="nalogo">
+					<a href="index.html"><img src="assets/images/smalllogo.png" alt="logo"></a>
+				</div>
+				<a href="index.html">
+					<div class="naleft"><div>首頁</div><img src="assets/images/header_buttonbg.png" alt="首頁" class="button_bg"></div>
+				</a>
+				<a href="about.html">
+					<div class="naleft2"><div>關於我們</div><img src="assets/images/header_buttonbg2.png" alt="About Us" class="button_bg2"></div>
+				</a>
+				<a href="brand.html">
+					<div class="naleft3"><div>品牌介紹</div><img src="assets/images/header_buttonbg5.png" alt="品牌介紹" class="button_bg3"></div>
+				</a>
+				<a href="follow.html">
+					<div class="naleft3"><div>購物流程</div><img src="assets/images/header_buttonbg4.png" alt="購物流程" class="button_bg3"></div>
+				</a>
+				<div class="dropdown">
+					<a href="brand.html">
+						<div class="dropbut">
+							<div class="dropstyle">商品分類&dArr;<div class="dropimg"></div>
+							</div>
+						</div>
+					</a>
+				<div class="dropinnertext">
+					<div class="body">
+						<div class="hotheader" >
+							<div class="hotbutton">
+								<a href="brand.html#全部商品"><button  class="hotheader" type="button" name="" value= "">
+									<span>全館熱門商品</span>
+								</button></a>
+							</div>
+							<div class="hotbutton">
+								<a href="brand.html#熱門商品"><button  class="hotheader" type="button" name="" value= "">
+									<span>所有商品</span>
+								</button></a>
+							</div>
+						</div>
+						
+						<div class="dropdown-cell">
+							<div class="dropdown-title">&hearts;畫具</div>
+							<a href="Category-tool.html">
+								<div class="dropdown-a">全部</div>
+							</a>
+							<a href="Category-tool.html#畫筆">
+								<div class="dropdown-a">畫筆</div>
+							</a>
+							<a href="Category-tool.html#畫刀">
+								<div class="dropdown-a">畫刀</div>
+							</a>
+							<a href="Category-tool.html#其他">
+								<div class="dropdown-a">其他</div>
+							</a>
+						</div>
+						
+						<div class="dropdown-cell">
+							<div class="dropdown-title">&hearts;畫材</div>
+							<a href="Category-material.html">
+								<div class="dropdown-a">全部</div>
+							</a>
+							<a href="Category-material.html#顏料">
+								<div class="dropdown-a">顏料</div>
+							</a>
+							<a href="Category-material.html#畫紙">
+								<div class="dropdown-a">畫紙</div>
+							</a>
+						</div>
+						
+						<div class="dropdown-cell">
+							<div class="dropdown-title">&hearts;畫架</div>
+							<a href="Category-shelf.html">
+								<div class="dropdown-a">全部</div>
+							</a>
+							<a href="Category-shelf.html#畫架-畫架">
+								<div class="dropdown-a">畫架</div>
+							</a>
+							<a href="Category-shelf.html#畫板">
+								<div class="dropdown-a">畫板</div>
+							</a>
+							<a href="Category-shelf.html#畫框">
+								<div class="dropdown-a">畫框</div>
+							</a>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--分隔，這邊是登入前的按鈕-->
+		<div class="navbar-right">
+			<a href="login.html" title="登入／註冊"><img src="assets/images/login.png" alt="登入／註冊"></a>
+		</div>
+		<!--分隔，登入後將改用這個部分的按鈕「style="display: none;"」用來隱藏按鈕用。-->
+		<div class="navbar-right" style="display: none;">
+			<a href="index.html" title="登出"><img src="assets/images/logout.png" alt="登出"></a>
+		</div>
+		<!--分隔，登入後將改用這個部分的按鈕「style="display: none;"」用來隱藏按鈕用。-->
+		<div class="navbar-right" style="display: none;">
+			<a href="member.html" title="會員中心"><img src="assets/images/loginsuc.png" alt="會員中心"></a>
+		</div>
+		<!--分隔-->
+		<div class="navbar-right2">
+			<a href="Shopping-car.html" title="購物車" style="position: relative;"><img src="assets/images/car.png" alt="購物車"><span class="navbar-right2-num">0
+				<!--span 為購物車的數字-->
+			</span></a>
+		</div>
+		<!--分隔-->
+	</nav>
+<!--header-->
+	<article>
+	<!--登入畫面開始-->
+		<form action="member.html" id="login" method="" name="login">
+			<div class="imgmember">
+				<img src="assets/images/login1.jpg" alt="member" class="member" onclick="showadministrator()">
+				<div class="login">Login</div>
+			</div>
+			<div class="member">
+				<label for="uname"><b>Account</b></label>
+				<input type="text" placeholder="Enter Account" name="uname" required class="input">
+				<label for="psw"><b>Password</b></label>
+				<input type="password" placeholder="Enter Password" name="password1" required class="input password" id="password1"  onKeypress="if ((event.keyCode > 32 && event.keyCode < 48) || (event.keyCode > 57 && event.keyCode < 65) || (event.keyCode > 90 && event.keyCode < 97)) event.returnValue = false;" onkeyup="value=value.replace(/\s/g,'')">
+				<label>
+					<p id="show">show password</p>
+				</label><br>
+				<div class="button">
+					<button type="submit" class="sumit">Login</button>
+				</div>
+			</div>
+			<div class="member_bottom">
+				<button type="reset" class="login_reset">Cancel</button>
+				<button type="button" class="register" onclick="showregister()">Register</button>
+			</div>
+		</form>
+		<!--登入畫面結束-->
+		<!--註冊畫面開始-->
+		<form action="login.html" id="register"  name="register" method="">
+			<div class="imgmember">
+				<img src="assets/images/icon-join.jpg" alt="member" class="member">
+				<div class="login">Welcome</div>
+			</div>
+			<div class="member">
+				<label for="uname"><b>Name</b></label>
+				<input type="text" placeholder="Enter Truename" name="uname" required class="input">
+				<label for="uname"><b>Account</b></label>
+				<input type="text" placeholder="Enter Account (At least 5 characters)" name="uname" required class="input"  id="input"  minlength="5" >
+				<label for="psw"><b>Password</b></label>
+				<input type="password" placeholder="Enter Password" name="psw" required class="input password" class="register" id="password" onblur="checkID(this)"  minlength="5"  pattern="(?=.*\d)(?=.*[A-Z|a-z]).{5,}" onKeypress="if ((event.keyCode > 32 && event.keyCode < 48) || (event.keyCode > 57 && event.keyCode < 65) || (event.keyCode > 90 && event.keyCode < 97)) event.returnValue = false;" onkeyup="value=value.replace(/\s/g,'')" title="請輸入至少一個英文字母，並超過5個字元">
+				<label for="psw"><b>Confirm Password</b></label>
+				<input type="password" placeholder="Enter Password" name="pswchk" required class="input" class="register" id="password" onKeypress="if ((event.keyCode > 32 && event.keyCode < 48) || (event.keyCode > 57 && event.keyCode < 65) || (event.keyCode > 90 && event.keyCode < 97)) event.returnValue = false;" onkeyup="value=value.replace(/\s/g,'')">
+				<br><br>
+				<div class="button">
+					<button type="submit" class="sumit" onclick="chk()" >Sing Up</button>
+				</div>
+			</div>
+			<div class="member_bottom">
+				<button type="reset" class="login_reset">Cancel</button>
+				<button type="button" class="login" onclick="showlogin()">login</button>
+			</div>
+		</form>
+		<!--註冊畫面結束-->
+		<!--管理者登入畫面開始-->
+		<form action="manage.html" id="administrator" method="">
+			<div class="imgmember">
+				<img src="assets/images/manage-icon.png" alt="member" class="member" onclick="showlogin()">
+				<div class="login">管理者登入</div>
+			</div>
+			<div class="member">
+				<label for="uname"><b>Manger Account</b></label>
+				<input type="text" placeholder="Enter Account" name="uname" required class="input">
+				<label for="psw"><b>Manger Password</b></label>
+				<input type="password" placeholder="Enter Password" name="password2" required class="input password" id="password2" onKeypress="if ((event.keyCode > 32 && event.keyCode < 48) || (event.keyCode > 57 && event.keyCode < 65) || (event.keyCode > 90 && event.keyCode < 97)) event.returnValue = false;" onkeyup="value=value.replace(/\s/g,'')">
+				<label>
+					<p id="show2">show password</p>
+				</label><br>
+				<div class="button">
+					<button type="submit" class="sumit">Login</button>
+				</div>
+			</div>
+			<div class="member_bottom">
+				<button type="reset" class="login_reset">Cancel</button>
+				<button type="button" class="login" onclick="showlogin()">回上一頁</button>
+			</div>
+		</form>
+		<!--管理者登入畫面結束-->
+	</article>
+	<script  type="text/javascript">
+	/*顯示密碼區*/
+		$("#show").mousedown(function () {
+	        let pass_type = $('#password1').attr("type");
+
+	        if (pass_type === '#password1' ){
+	            $("input.password").attr("type", "password");
+	        } else {
+	            $("input.password").attr("type", "text");
+	        }
+	    })
+	    $("#show").mouseup(function () {
+	        let pass_type = $('#password1').attr("type");
+
+	        if (pass_type === '#password1' ){
+	            $("input.password").attr("type", "text");
+	        } else {
+	            $("input.password").attr("type", "password");
+	        }
+	    })
+	    $("#show2").mousedown(function () {
+	        let pass_type = $('#password2').attr("type");
+
+	        if (pass_type === '#password2' ){
+	            $("input.password").attr("type", "password");
+	        } else {
+	            $("input.password").attr("type", "text");
+	        }
+	    })
+	    $("#show2").mouseup(function () {
+	        let pass_type = $('#password2').attr("type");
+
+	        if (pass_type === '#password2' ){
+	            $("input.password").attr("type", "text");
+	        } else {
+	            $("input.password").attr("type", "password");
+	        }
+	    })
+	/*顯示密碼區*/
+	/*登入註冊轉換*/
+		function showregister(){
+			document.getElementById('register').style.display='block';
+			document.getElementById('login').style.display='none';
+			document.getElementById('administrator').style.display='none';
+		}
+		function showlogin(){
+			document.getElementById('register').style.display='none';
+			document.getElementById('login').style.display='block';
+			document.getElementById('administrator').style.display='none';
+		}
+		function showadministrator(){
+			document.getElementById('register').style.display='none';
+			document.getElementById('login').style.display='none';
+			document.getElementById('administrator').style.display='block';
+		}
+	/*登入註冊轉換*/
+		/*double check start*/
+		function chk(){
+			if (document.register.psw.value==document.register.pswchk.value){
+				document.register.submit;
+			}
+			else{
+				alert("兩次輸入的密碼不同");
+			}
+		}
+		/*double check end*/
+	</script>
+<!--footer-->
+<footer>
+	<div class="footer">
+		<div class="footer_left">
+			<div class="footer_title">[ 會員中心🚀 ]</div><br>
+			<div class="footer_text"><a href="member.html" class="footer_link">會員資料</a><br><a href="about.html" class="footer_link">加入我們</a><br><a href="follow.html" class="footer_link">幫助中心</a><br><br>訪客人數:0</div>
+		</div>
+		<div class="footer_left">
+			<div class="footer_title">[ 客服中心📞 ]</div><br>
+			<div class="footer_text"></div>
+			<div><span class="contact_title">聯絡我們</span>
+			<form action="mailto:s10640135@cycu.edu.tw" name="contact" method="">
+				<table border="1" align="center" class="contact">
+					<tr><td>NAME</td><td>
+					<input type="text" name="username" placeholder="Name" size="10" maxlength="10" class="footer_input" /></td></tr>
+					<tr><td>GENDER</td><td>
+					<input type="radio" name="gender" value="male" checked />Male   <input type="radio" name="gender" value="female" />Female </td></tr>
+					<tr><td>EMAIL</td><td>
+					<input type="text" name="useremail" placeholder="Email" size="10" maxlength="10"  class="footer_input"/></td></tr>
+					<tr><td>MESSAGE</td><td>
+				<textarea name="Message" cols="20" rows="2" wrap="hard" class="footer_input"> </textarea> </td></tr>
+				</table>
+				<input type="submit" value="送出" class="submit" />    <button type="reset" class="reset">Cancel</button>
+			</form>
+			</div>
+		</div>
+		<div class="footer_left">
+			<div class="footer_title">[ 最新消息🔔 ]</div><br>
+			<div class="footer_text"><a href="index.html" class="footer_link"><div>6月購物天天折50元</div><div>本月熱門商品</div><div>滿千送百活動開跑啦</div></a></div>
+		</div>
+		<div class="footer_left">
+			<div class="footer_title">[ 關於我們🌸 ]</div><br>
+			<div class="footer_text"><a href="brand.html" class="footer_link"><img src="assets/images/logo.png" alt="logo" class="footer_logo"><br>品牌簡介</a></div>
+		</div>
+	</div>
+	<div class="copyright">Copyright © 2019 CYIM. All Rights Reserved</div>
+</footer>
+<!--footer-->
+</body>
+</html>

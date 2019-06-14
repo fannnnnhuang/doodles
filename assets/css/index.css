@@ -1,0 +1,493 @@
+	@keyframes UpDown {
+		  0% {
+		  	opacity: 1;
+		    transform: translate3d( 0,15px, 0);
+		  }
+		  25% {
+		    transform: translate3d( 0,25px, 0);
+		  }
+		  50% {
+		    transform: translate3d( 0,-10px, 0);
+		  }
+		  100% {
+		    transform: translate3d( 0,5px, 0);
+		  }
+	}
+/*每頁的預設*/
+	body {
+		min-height: 100%;
+		font-family: "微軟正黑體";
+		background-color:   #C0C0C0;
+		margin:0px;
+		/*background-image: url("..sa/images/bg.jpg");
+		background-size: 100%;
+		/* footer 高度 */
+	}
+	article {
+		padding-top: 150px;
+		width: 90%;
+		margin: 0 auto;
+	}
+	a{   /* 會讓LINK沒有底線*/
+		        text-decoration: none;
+		        color: unset;
+		        z-index: 1;
+		    }
+/*每頁的預設*/
+/*右側滾輪*/
+		/* width */
+		::-webkit-scrollbar {
+		width: 20px;
+		}
+		/* Track */
+		::-webkit-scrollbar-track {
+		box-shadow: inset 0 0 5px grey;
+		border-radius: 10px;
+		}
+		
+		/* Handle */
+		::-webkit-scrollbar-thumb {
+		background:  saddlebrown;
+		border-radius: 10px;
+		}
+		/* Handle on hover */
+		::-webkit-scrollbar-thumb:hover {
+		background: #efd467;
+		}
+		/*右側滾輪*/
+		/*回首紐*/
+		#myBtn {
+			display: none;
+			position: fixed;
+			bottom: 20px;
+			right: 30px;
+			z-index: 99;
+			font-size: 18px;
+			border: none;
+			outline: none;
+			background-color: brown;
+			color: white;
+			cursor: pointer;
+			padding: 15px;
+			border-radius: 4px;
+		}
+
+		#myBtn:hover {
+			background-color: #555;
+		}
+  		/*回首紐*/
+/* header */
+	nav {
+		overflow: hidden;
+		background-image: url('../images/headerbg.png');
+		position: fixed;
+		width: 100%;
+		box-shadow: 0 1px 8px rgba(0, 0, 0, .3);
+		top: 0px;
+		left: 0px;
+		z-index: 100;
+	}
+
+	img.button_bg{
+		height: 150px;
+		position: relative;
+		top: -80px;
+		z-index: -1;
+		/*display: none;*/
+		opacity: 0;
+		transition:  1s ;
+	}
+	img.button_bg2,img.button_bg3{
+		height: 150px;
+		width: 200px;
+		position: relative;
+		top: -85px;
+		z-index: -1;
+		/*display: none;*/
+		opacity: 0;
+		transition:  1s ;
+	}
+	.navbar {
+		width: 100%;
+	}
+	.nalogo {
+		float: left;
+		margin: 8px;
+	}
+	.naleft {
+		height: 40px;
+		float: left;
+		font-size: 22px;
+		font-weight: bold;
+		color: black;
+		text-align: center;
+		padding: 2%  20px;
+		transition:  1s ;
+	}
+	.naleft:hover img.button_bg{
+		opacity: 0.9;
+	}
+	.naleft2:hover img.button_bg2{
+		opacity: 0.9;
+	}
+	.naleft3:hover img.button_bg3{
+		opacity: 0.9;
+	}
+	.naleft2{
+		height: 40px;
+		float: left;
+		font-size: 22px;
+		font-weight: bold;
+		line-height: 1.5;
+		color: black;
+		text-align: center;
+		padding: 2% 10px;
+		transition:  0.3s linear;
+	}
+	.naleft3 {
+		height: 40px;
+		float: left;
+		font-size: 22px;
+		font-weight: bold;
+		line-height: 1.5;
+		color: black;
+		text-align: center;
+		padding: 2% 10px;
+		transition:  0.3s linear;
+	}
+	#naindex {
+		background-color: ;
+		height: 18px;
+	}
+	.dropdown {
+		float: left;
+		overflow: hidden;
+		padding: 20px 2px;
+		
+	}
+	.dropbut {
+		
+		color:black;
+		padding: 10px;
+		background-color: inherit;
+		font: inherit;
+		margin: 0;
+		cursor: pointer;
+		transition:  0.3s linear;
+	}
+	.dropstyle {
+		background-color: white;
+		border: 2px #efd467 dotted; /*縣*/
+		border-radius: 10%;
+		color: #1a1a1a;
+		padding: 8px 15px;
+		line-height: 18px;
+		transition:  0.3s linear;
+		font-size:22px;
+		font-weight:bolder;
+	}
+	.dropimg {
+		width: 18px;
+		height: 18px;
+		background-size: 18px 18px;
+		transition: all 0.2s linear;
+		float: right;
+		margin-left: 5px;
+	}
+	.dropbut:hover > .dropstyle {
+		background-color: #e7bfbfcc;
+		color: #6b3838e6;
+		border: 1px solid #e0ababe6;
+	}
+	.dropbut:hover > .dropstyle > .dropimg {
+		
+		background-size: 18px 18px;
+	}
+	.dropinnertext {
+		display: none;
+		position: fixed;
+		width: 30%;
+		z-index: 10;
+		 /*縣*/
+
+	}
+	.dropinnertext .body {
+		width: 100%;
+		box-shadow: 0 1px 8px rgba(0, 0, 0, .2);
+		border-radius: 5px;
+		display: table;
+		padding: 15px;
+		background: white;
+		border: 10px brown dashed;
+		margin: 0 auto;
+	}
+	button.hotheader{
+        background-color: white;
+        color: black;
+        border: 2px solid #f44336;
+         margin: 0,auto;
+        }
+    button.hotheader:hover{
+        background-color: #f44336;
+        color: white;
+    }
+	.dropdown-cell {
+		display: table-cell;
+		width: calc(100%/3);
+		padding: 10px;
+		text-align: center;
+	}
+	.dropdown-title {
+		font-size: 25px;
+		border-bottom: 2px #efd467 dotted; /*縣*/
+		margin: 5px 0;
+		margin-bottom: 10px;
+		padding: 8px 0;
+		font-weight: bold;
+		color: saddlebrown;
+	}
+	.dropdown-a {
+		font-size: 20px;
+		margin: 5px 0;
+		padding: 8px 0;
+		color: black; /*INNERTEXT*/
+		transition: all 0.2s linear;
+	}
+	.dropdown-a:hover {
+		color:saddlebrown /*innerbigtext*/
+	}
+	.dropdown:hover .dropinnertext {
+		display: block;
+	}
+	.navbar-right {
+		float: right;
+		padding-right: 48px;
+		opacity: .75;
+		transition: all 0.3s linear;
+	}
+	.navbar-right:hover {
+		opacity: 1;
+		filter: drop-shadow(0px 1px 5px gray); /*?*/
+	}
+	.navbar-right img {
+		width: 70px;
+		height: 60px;
+		padding: 5px;
+	}
+	.navbar-right2 {
+		float: right;
+		padding-right: 3px;
+		opacity: .75;
+		transition: all 0.3s linear;
+	}
+	.navbar-right2:hover {
+		opacity: 1;
+		filter: drop-shadow(0px 1px 5px rgba(255, 255, 255, .3));
+	}
+	.navbar-right2 img {
+		width: 70px;
+		height: 60px;
+		
+	}
+	.navbar-right2-num {
+		position: absolute;
+		top: -40px;
+		right: 1px;
+		padding: 5px 8px;
+		border-radius: 50%;
+		background: red;
+		color: white;
+		font-size: 14px;
+		line-height: 14px;
+	}
+		/* header */
+		/* 幻燈片 */
+	.flickity-enabled {
+		position: relative;
+	}
+	.flickity-enabled:focus {
+		outline: none;
+	}
+	.flickity-viewport {
+		overflow: hidden;
+		position: relative;
+		height: 100%;
+	}
+	.flickity-slider {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+	}
+	.flickity-enabled.is-draggable {
+		-webkit-tap-highlight-color: transparent;
+		tap-highlight-color: transparent;
+		-webkit-user-select: none;
+		-moz-user-select: none;
+		-ms-user-select: none;
+		user-select: none;
+	}
+	.flickity-enabled.is-draggable .flickity-viewport {
+		cursor: move;
+		cursor: -webkit-grab;
+		cursor: grab;
+	}
+	.flickity-enabled.is-draggable .flickity-viewport.is-pointer-down {
+		cursor: -webkit-grabbing;
+		cursor: grabbing;
+	}
+	.flickity-button {
+		position: absolute;
+		background: hsla(0, 0%, 100%, 0.75);
+		border: none;
+		color: #333;
+	}
+	.flickity-button:hover {
+		background: white;
+		cursor: pointer;
+	}
+	.flickity-button:focus {
+		outline: none;
+		box-shadow: 0 0 0 5px #19F;
+	}
+	.flickity-button:active {
+		opacity: 0.6;
+	}
+	.flickity-button:disabled {
+		opacity: 0.3;
+		cursor: auto;
+		pointer-events: none;
+	}
+	.flickity-button-icon {
+		fill: #333;
+	}
+	.flickity-prev-next-button {
+		top: 50%;
+		width: 44px;
+		height: 44px;
+		border-radius: 50%;
+		/* vertically center */
+		transform: translateY(-50%);
+	}
+	.flickity-prev-next-button.previous {
+		left: 10px;
+	}
+	.flickity-prev-next-button.next {
+		right: 10px;
+	}
+	.flickity-rtl .flickity-prev-next-button.previous {
+		left: auto;
+		right: 10px;
+	}
+	.flickity-rtl .flickity-prev-next-button.next {
+		right: auto;
+		left: 10px;
+	}
+	.flickity-prev-next-button .flickity-button-icon {
+		position: absolute;
+		left: 20%;
+		top: 20%;
+		width: 60%;
+		height: 60%;
+	}
+	.flickity-page-dots {
+		position: absolute;
+		width: 100%;
+		bottom: -25px;
+		padding: 0;
+		margin: 0;
+		list-style: none;
+		text-align: center;
+		line-height: 1;
+	}
+	.flickity-rtl .flickity-page-dots {
+		direction: rtl;
+	}
+	.flickity-page-dots .dot {
+		display: inline-block;
+		width: 10px;
+		height: 10px;
+		margin: 0 8px;
+		background: #333;
+		border-radius: 50%;
+		opacity: 0.25;
+		cursor: pointer;
+	}
+	.flickity-page-dots .dot.is-selected {
+		opacity: 1;
+	}
+	.carousel-cell {
+		width: calc(100% - 150px);
+		counter-increment: gallery-cell;
+		border: 10px solid #553616;
+	}
+	.carousel-cell img {
+		width: 100%;
+	}
+	.cell2{
+		border: 8px solid #704a24;
+	}
+		/* 幻燈片 */
+		/**/
+	div.fixed{
+		position: fixed;
+		left:130px;
+		bottom: -40px;
+		background-color: rgba(0,0,0,0);
+	}
+	div.fixed2{
+		position: fixed;
+		left:710px;
+		bottom: 110px;
+		background-color: rgba(0,0,0,0);
+	}
+	div.fixed3{
+		position: fixed;
+		left:1280px;
+		bottom: -20px;
+		background-color: rgba(0,0,0,0);
+	}
+	div.classification{
+		transform:translateY(200px);
+		transition: all 1s ease-out;
+	}
+	div.classification:hover{
+		transform:translateY(50px);
+	}
+	div.classification:hover .brush{
+		background-color: rgba(70,64,53,1);
+		transition: 1s;
+	}
+	div.classification:hover .img_brush{
+		animation: UpDown 0.8s infinite cubic-bezier(0.215, 0.610, 0.355, 1.000);
+	}
+	div.brush{
+		background-color: rgba(70,64,53,0.6)/*rgba(95,86,44,0.8)*/;
+		color: white;
+		text-align: right;
+		border-radius: 25px;
+		position: absolute;
+		width: 100%;
+		top: 130px;
+		height: 500px;
+		font-size: 25px;
+		padding:10px;
+		z-index: -1;
+		border-style: solid;
+		 border-width: 5px;
+		border-color: white;
+		-webkit-filter:drop-shadow(5px 5px  gray);
+	}
+	img.img_brush{
+		z-index: 10;
+		width: 400px;
+		padding: 50px;
+	}
+	/*.bord1{
+		border-style: double;
+	}
+	.bord2{
+		border-style: dashed;
+	}
+	.bord3{
+		border-style: solid;
+	}*/
